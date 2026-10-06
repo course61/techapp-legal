@@ -59,6 +59,7 @@
 <ul>
 <li>Your records and photos are stored on a server in the United States that I rent and administer. The app connects only to that server, over TLS 1.3, and verifies the server with a private certificate built into the app. The server accepts only connections from the app.</li>
 <li>Sign-in tokens and one-time codes are stored hashed. The app keeps your sign-in in the iOS Keychain.</li>
+<li><strong>Browser version.</strong> TechApp also runs in a web browser at https://40.160.39.68/, with the same account and the same server, over HTTPS (certificate from Let's Encrypt). As in the app, your records and photos are kept on the device you use (in the browser) and synced to the server; your sign-in stays in the browser's local storage until you sign out. Sign in with Apple and Google is available only in the iPhone app. To read photos of labels, the browser version downloads a text-recognition engine and language data from jsDelivr (cdn.jsdelivr.net) and tessdata.projectnaptha.com, which can see your IP address; in the iPhone app the reading happens on the phone with Apple's Vision and nothing is downloaded. If you add your own AI key, the browser sends your question straight to Anthropic or OpenAI, as the app does.</li>
 <li>Your data is <strong>not</strong> end-to-end encrypted: as the administrator I can technically access the server's contents. I do that only to run, repair and secure the service.</li>
 <li>No system is perfectly secure, and I cannot promise absolute security.</li>
 </ul>
